@@ -1,1 +1,3 @@
 # threadpool
+从libuv提取出的简化线程池
+目前仅支持linux系统
