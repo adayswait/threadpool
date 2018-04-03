@@ -21,6 +21,12 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <limits.h>
+#include <errno.h>
+#include <sys/resource.h>
+
 #include "queue.h"
 #include "threadpool.h"
 
