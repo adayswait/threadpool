@@ -287,9 +287,6 @@ static void tp_init_once(void)
   init_threads();
 }
 
-/**
- * tp_work *w 应指向栈空间,不能在堆空间创建,否则QUEUE会出错
- */
 void tp_work_submit(struct tp_work *w,
                     void (*work)(struct tp_work *w),
                     void *data)
